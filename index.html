@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="El Bárbaro - Taller y Auxilio para Motos en Uriburu, La Pampa. Reparación general, repuestos alternativos y auxilio mecánico con grúa. Atendido por Abel Carabajal.">
+  <meta name="keywords" content="taller motos, auxilio mecánico, repuestos motos, reparación motos, Uriburu, La Pampa, Argentina, Abel Carabajal">
+  <meta name="author" content="El Bárbaro">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.tallerelbarbaro.com">
+  <title>El Bárbaro | Taller y Auxilio Mecánico para Motos en Uriburu</title>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.tallerelbarbaro.com">
+  <meta property="og:title" content="El Bárbaro - Taller y Auxilio para Motos">
+  <meta property="og:description" content="Reparación general, repuestos alternativos y auxilio mecánico con grúa en Uriburu y zona.">
+  <meta property="og:image" content="https://www.tallerelbarbaro.com/asset/Logo%20El%20Barbaro.png">
+
+  <!-- Favicon (casco vikingo) -->
+  <link rel="icon" href="asset/Logo El Barbaro.png">
+
+  <!-- Bootstrap 5 CSS + Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700;900&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  
+  <!-- CSS personalizado -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Schema.org para negocio local -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": "El Bárbaro - Taller y Auxilio para Motos",
+    "image": "https://www.tallerelbarbaro.com/asset/Logo%20El%20Barbaro.png",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Ruta 35 s/n",
+      "addressLocality": "Uriburu",
+      "addressRegion": "La Pampa",
+      "postalCode": "6300",
+      "addressCountry": "AR"
+    },
+    "telephone": "+54 9 2954 542640",
+    "priceRange": "$$",
+    "openingHours": "Mo-Fr 09:00-18:00, Sa 09:00-13:00",
+    "url": "https://www.tallerelbarbaro.com",
+    "founder": {
+      "@type": "Person",
+      "name": "Abel Carabajal"
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": "Uriburu y zona de influencia"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- SPLASH SCREEN (CASCO VIKINGO) -->
+  <div id="splash-screen">
+    <div class="splash-content">
+      <img src="asset/Logo El Barbaro.png" alt="El Bárbaro Logo" class="splash-logo" onerror="this.style.display='none'">
+      <div class="helmet-animation">
+        <div class="helmet">
+          <div class="helmet-horn left"></div>
+          <div class="helmet-horn right"></div>
+          <div class="helmet-base"></div>
+        </div>
+      </div>
+      <h1 class="splash-title">EL BÁRBARO</h1>
+      <p class="splash-subtitle">TALLER Y AUXILIO PARA MOTOS</p>
+      <div class="loader"></div>
+    </div>
+  </div>
+
+  <!-- CONTENIDO PRINCIPAL (inicialmente oculto) -->
+  <div id="main-content" style="display: none;">
+    
+    <!-- BOTÓN FLOTANTE WHATSAPP -->
+    <a href="https://wa.me/5492954542640" class="whatsapp-float" target="_blank">
+      <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <!-- NAVBAR CON ESPACIO PARA LOGO -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="#hero">
+          <!-- Espacio para el logo (imagen) -->
+          <img src="asset/Logo El Barbaro.png" alt="El Bárbaro Logo" class="navbar-logo" onerror="this.style.display='none'">
+          <span class="brand-text">EL BÁRBARO</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#hero">INICIO</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">SOBRE ABEL</a></li>
+            <li class="nav-item"><a class="nav-link" href="#servicios-destacados">SERVICIOS</a></li>
+            <li class="nav-item"><a class="nav-link" href="#servicios-especiales">SERVICIOS ESPECIALES</a></li>
+            <li class="nav-item"><a class="nav-link" href="#proceso">PROCESO</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contacto">CONTACTO</a></li>
+          </ul>
+          <a href="#contacto" class="btn btn-primary ms-lg-3">CONTACTAR</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO CON VIDEO DE FONDO -->
+    <section id="hero" class="hero-section d-flex align-items-center">
+      <!-- Video de fondo (con respaldo de imagen) -->
+      <video class="hero-video" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1558981806-ec527fa84c39?w=1200">
+        <!-- URL del video de Instagram (debes descargarlo y alojarlo en tu servidor) -->
+        <source src="asset/Hero.mp4" type="video/mp4">
+        <!-- Si el video no carga, se ve la imagen de poster -->
+      </video>
+      <div class="hero-overlay"></div>
+      <div class="container hero-content text-center text-white">
+        <span class="hero-badge">#MOTOQUEROS</span>
+        <h1 class="display-1 fw-bold" data-animate="fade-up">REPARACIÓN, AUXILIO Y REPUESTOS</h1>
+        <p class="lead" data-animate="fade-up" data-delay="200">Taller especializado en motos. Auxilio mecánico y grúa en Uriburu y toda la zona.</p>
+        <div class="mt-5" data-animate="fade-up" data-delay="400">
+          <a href="#contacto" class="btn btn-primary btn-lg me-3">CONTACTAR</a>
+          <a href="#servicios-destacados" class="btn btn-outline-primary btn-lg">VER SERVICIOS</a>
+        </div>
+        <div class="hero-scroll-indicator">
+          <a href="#about" class="scroll-down"><i class="bi bi-chevron-down"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE ABEL CARABAJAL (EL DUEÑO) -->
+    <section id="about" class="section-padding">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-4 mb-lg-0" data-animate="fade-right">
+            <h2 class="section-title">QUIÉN SOY</h2>
+            <p class="lead">Me llamo <strong>Abel Carabajal</strong>. Soy mecánico apasionado por las motos y llevo más de 5 años reparando máquinas. Creo en el servicio honesto, rápido y de calidad.</p>
+            <p>Atiendo personalmente cada consulta, diagnóstico y reparación. Mi compromiso es que tu moto quede perfecta. Mi taller es un punto de encuentro para los motoqueros de la región, y mi servicio de auxilio te llega donde lo necesites.</p>
+            <div class="mt-4">
+              <a href="#contacto" class="btn btn-primary">HABLAR CON ABEL</a>
+            </div>
+          </div>
+          <div class="col-lg-6" data-animate="fade-left">
+            <div class="about-image-wrapper">
+              <!-- Foto de Abel (reemplazar con la imagen real) -->
+              <img src="asset/Perfil-Abel.png" alt="Abel Carabajal - Dueño de El Bárbaro" class="img-fluid shadow">
+              <div class="about-experience">
+                <span class="years">5+</span>
+                <span class="text">AÑOS<br>DE EXPERIENCIA</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICIOS DESTACADOS (3 PILARES) -->
+    <section id="servicios-destacados" class="section-padding bg-dark text-white">
+      <div class="container">
+        <h2 class="section-title text-center text-white mb-5">MIS 3 PILARES</h2>
+        <div class="row g-4">
+          <div class="col-md-4" data-animate="zoom-in">
+            <div class="card-service-highlight text-center p-5">
+              <div class="icon-wrapper-large">
+                <i class="bi bi-tools"></i>
+              </div>
+              <h3 class="mt-4">REPARACIÓN GENERAL</h3>
+              <p class="text-light">Diagnostico y reparo todas las marcas y modelos. Trabajo 100% manual, con atención a cada detalle.</p>
+            </div>
+          </div>
+          <div class="col-md-4" data-animate="zoom-in" data-delay="100">
+            <div class="card-service-highlight text-center p-5">
+              <div class="icon-wrapper-large">
+                <i class="bi bi-gear"></i>
+              </div>
+              <h3 class="mt-4">REPUESTOS ALTERNATIVOS</h3>
+              <p class="text-light">Tengo el stock más completo de repuestos de calidad: bolilleros, filtros, espejos, carburadores, CDI y más.</p>
+            </div>
+          </div>
+          <div class="col-md-4" data-animate="zoom-in" data-delay="200">
+            <div class="card-service-highlight text-center p-5">
+              <div class="icon-wrapper-large">
+                <i class="bi bi-truck"></i>
+              </div>
+              <h3 class="mt-4">AUXILIO MECÁNICO</h3>
+              <p class="text-light">Te llevo con mi grúa adonde necesites. Asistencia en ruta y auxilio mecánico en Uriburu y todo el área.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REPUESTOS DISPONIBLES (MEJORADO) -->
+    <section id="servicios" class="section-padding bg-light">
+      <div class="container">
+        <h2 class="section-title text-center mb-5">REPUESTOS DISPONIBLES</h2>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4" data-animate="flip-up">
+            <div class="card-repuesto text-center">
+              <div class="icon-repuesto">
+                <i class="bi bi-gear"></i>
+              </div>
+              <h3>BOLILLEROS</h3>
+              <p>Rodamientos de precisión para ruedas y transmisión</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-animate="flip-up" data-delay="50">
+            <div class="card-repuesto text-center">
+              <div class="icon-repuesto">
+                <i class="bi bi-funnel"></i>
+              </div>
+              <h3>FILTROS</h3>
+              <p>Filtros de aire, aceite y combustible de calidad</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-animate="flip-up" data-delay="100">
+            <div class="card-repuesto text-center">
+              <div class="icon-repuesto">
+                <i class="bi bi-eye"></i>
+              </div>
+              <h3>ESPEJOS</h3>
+              <p>Espejos retrovisores para mayor visibilidad</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-animate="flip-up" data-delay="150">
+            <div class="card-repuesto text-center">
+              <div class="icon-repuesto">
+                <i class="bi bi-droplet-fill"></i>
+              </div>
+              <h3>LUBRICANTES</h3>
+              <p>Aceites premium para motor, transmisión y cadena</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-animate="flip-up" data-delay="200">
+            <div class="card-repuesto text-center">
+              <div class="icon-repuesto">
+                <i class="bi bi-wrench"></i>
+              </div>
+              <h3>CARBURADORES</h3>
+              <p>Carburadores de precisión para mejor rendimiento</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-animate="flip-up" data-delay="250">
+            <div class="card-repuesto text-center">
+              <div class="icon-repuesto">
+                <i class="bi bi-link-45deg"></i>
+              </div>
+              <h3>KITS DE DISTRIBUCIÓN</h3>
+              <p>Cadenas y piñones para transmisión confiable</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-animate="flip-up" data-delay="300">
+            <div class="card-repuesto text-center">
+              <div class="icon-repuesto">
+                <i class="bi bi-lightning-fill"></i>
+              </div>
+              <h3>CDI</h3>
+              <p>Módulos de encendido electrónico de última tecnología</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-animate="flip-up" data-delay="350">
+            <div class="card-repuesto text-center">
+              <div class="icon-repuesto">
+                <i class="bi bi-cpu"></i>
+              </div>
+              <h3>REGULADORES</h3>
+              <p>Reguladores de voltaje para sistema eléctrico</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-animate="flip-up" data-delay="400">
+            <div class="card-repuesto text-center">
+              <div class="icon-repuesto">
+                <i class="bi bi-lightbulb-fill"></i>
+              </div>
+              <h3>LUCES ÓPTICAS</h3>
+              <p>Faros, pilotos y guías de luz LED y halógenas</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-animate="flip-up" data-delay="450">
+            <div class="card-repuesto text-center">
+              <div class="icon-repuesto">
+                <i class="bi bi-shuffle"></i>
+              </div>
+              <h3>TRANSMISIONES</h3>
+              <p>Engranajes y sistemas de transmisión completos</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-animate="flip-up" data-delay="500">
+            <div class="card-repuesto text-center">
+              <div class="icon-repuesto">
+                <i class="bi bi-exclamation-circle-fill"></i>
+              </div>
+              <h3>PASTILLAS DE FRENO</h3>
+              <p>Pastillas de freno de máxima seguridad y durabilidad</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-animate="flip-up" data-delay="550">
+            <div class="card-repuesto text-center">
+              <div class="icon-repuesto">
+                <i class="bi bi-grip-horizontal"></i>
+              </div>
+              <h3>MANILLARES</h3>
+              <p>Manillares ergonómicos y personalizados</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-animate="flip-up" data-delay="600">
+            <div class="card-repuesto text-center">
+              <div class="icon-repuesto">
+                <i class="bi bi-disc"></i>
+              </div>
+              <h3>DISCOS DE EMBRAGUE</h3>
+              <p>Discos de embrague de precisión y larga duración</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICIOS ESPECIALES Y TRABAJOS A PEDIDO -->
+    <section id="servicios-especiales" class="section-padding bg-dark text-white">
+      <div class="container">
+        <h2 class="section-title text-center text-white mb-5">SERVICIOS ESPECIALES Y TRABAJOS A PEDIDO</h2>
+        <p class="lead text-center mb-5" style="color: #ccc;">Realizamos trabajos mecánicos especializados y soluciones a medida para motos:</p>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4" data-animate="zoom-in">
+            <div class="card-service-special text-center p-4">
+              <div class="icon-wrapper-special">
+                <i class="bi bi-gear-wide-connected"></i>
+              </div>
+              <h3>RECTIFICADOS EN 24 HS</h3>
+              <p class="text-light">Servicio rápido de rectificado de motores con entrega garantizada en 24 horas.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-animate="zoom-in" data-delay="100">
+            <div class="card-service-special text-center p-4">
+              <div class="icon-wrapper-special">
+                <i class="bi bi-tools"></i>
+              </div>
+              <h3>ASIENTOS DE VÁLVULAS</h3>
+              <p class="text-light">Rectificación y ajuste preciso de asientos de válvulas para óptimo rendimiento del motor.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-animate="zoom-in" data-delay="200">
+            <div class="card-service-special text-center p-4">
+              <div class="icon-wrapper-special">
+                <i class="bi bi-arrow-repeat"></i>
+              </div>
+              <h3>CAMBIO DE BIELA</h3>
+              <p class="text-light">Reemplazo completo de bielas con piezas de calidad y ajuste profesional.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-animate="zoom-in" data-delay="300">
+            <div class="card-service-special text-center p-4">
+              <div class="icon-wrapper-special">
+                <i class="bi bi-truck"></i>
+              </div>
+              <h3>TRASLADO</h3>
+              <p class="text-light">Nos encargamos de llevar y traer el motor o la unidad completa. Servicio de auxilio incluido.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-animate="zoom-in" data-delay="400">
+            <div class="card-service-special text-center p-4">
+              <div class="icon-wrapper-special">
+                <i class="bi bi-box-seam"></i>
+              </div>
+              <h3>REPUESTOS POR ENCARGO</h3>
+              <p class="text-light">Cubiertas, repuestos alternativos y cualquier pieza que no esté en stock. La conseguimos por vos.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-animate="zoom-in" data-delay="500">
+            <div class="card-service-special text-center p-4">
+              <div class="icon-wrapper-special">
+                <i class="bi bi-wrench-adjustable-circle"></i>
+              </div>
+              <h3>SOLUCIONES INTEGRALES</h3>
+              <p class="text-light">Trabajos mecánicos personalizados según la necesidad específica de cada cliente.</p>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-5">
+          <h3 class="mb-4" style="color: var(--primary-orange);">¿No encontrás lo que buscás?</h3>
+          <p class="mb-4 lead">Consultanos y lo resolvemos. Tu problema es nuestro desafío.</p>
+          <a href="https://wa.me/5492954542640" class="btn btn-primary btn-lg" target="_blank">
+            <i class="bi bi-whatsapp me-2"></i>Consultar por WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESO DE TRABAJO - MEJORADO -->
+    <section id="proceso" class="section-padding">
+      <div class="container">
+        <h2 class="section-title text-center mb-5">CÓMO TRABAJO</h2>
+        <p class="lead text-center mb-5" style="color: #666; max-width: 700px; margin-left: auto; margin-right: auto;">
+          Mi proceso es simple, transparente y orientado a tu satisfacción. De principio a fin con honestidad.
+        </p>
+        <div class="proceso-timeline">
+          <div class="proceso-step" data-animate="fade-up">
+            <div class="step-icon">
+              <i class="bi bi-chat-dots"></i>
+            </div>
+            <h3>CONSULTA</h3>
+            <p>Contactame y contame el problema. Escucho con atención y te doy mi análisis sincero.</p>
+            <div class="step-number">01</div>
+          </div>
+
+          <div class="proceso-connector"></div>
+
+          <div class="proceso-step" data-animate="fade-up" data-delay="100">
+            <div class="step-icon">
+              <i class="bi bi-calculator"></i>
+            </div>
+            <h3>PRESUPUESTO</h3>
+            <p>Hago el diagnóstico y te presento un presupuesto honesto y sin sorpresas.</p>
+            <div class="step-number">02</div>
+          </div>
+
+          <div class="proceso-connector"></div>
+
+          <div class="proceso-step" data-animate="fade-up" data-delay="200">
+            <div class="step-icon">
+              <i class="bi bi-tools"></i>
+            </div>
+            <h3>REPARACIÓN</h3>
+            <p>Realizo la reparación con profesionalismo. No hay detalles menores para mí.</p>
+            <div class="step-number">03</div>
+          </div>
+
+          <div class="proceso-connector"></div>
+
+          <div class="proceso-step" data-animate="fade-up" data-delay="300">
+            <div class="step-icon">
+              <i class="bi bi-check-circle"></i>
+            </div>
+            <h3>ENTREGA</h3>
+            <p>Tu moto lista y checkeada. Te la entrego con mi garantía personal.</p>
+            <div class="step-number">04</div>
+          </div>
+
+          <div class="proceso-connector"></div>
+
+          <div class="proceso-step" data-animate="fade-up" data-delay="400">
+            <div class="step-icon">
+              <i class="bi bi-heart"></i>
+            </div>
+            <h3>SEGUIMIENTO</h3>
+            <p>Te contacto después para asegurar que todo funcione perfecto con tu moto.</p>
+            <div class="step-number">05</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FUERTE -->
+    <section class="cta-section">
+      <div class="container text-center text-white">
+        <h2 class="display-5 fw-bold">¿TU MOTO NECESITA REPARACIÓN O AUXILIO?</h2>
+        <p class="lead">Contactame ahora para reparación, repuestos o traslado con mi grúa. Estoy para que tu moto ande perfecta.</p>
+        <a href="#contacto" class="btn btn-primary btn-lg mt-3">CONTACTAR</a>
+      </div>
+    </section>
+
+    <!-- CONTACTO + MAPA -->
+    <section id="contacto" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 mb-5 mb-lg-0">
+            <h2 class="section-title">CONTACTO</h2>
+            <p class="mb-4"><i class="bi bi-geo-alt-fill text-primary me-2"></i> Sobre Ruta Nacional 5, Uriburu, La Pampa</p>
+            <p class="mb-4"><i class="bi bi-telephone-fill text-primary me-2"></i> +54 9 2954 542640</p>
+            <p class="mb-4"><i class="bi bi-envelope-fill text-primary me-2"></i> abelocarabajal@hotmail.com</p>
+            <p class="mb-4"><i class="bi bi-truck text-primary me-2"></i> Cobertura: Uriburu y zona de influencia</p>
+            <div class="social-links mt-4">
+              <a href="https://www.facebook.com/share/1MU8K5NiLM/" class="btn btn-outline-primary me-2" target="_blank"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/carabajalabel?igsh=dHg2cGZlb29icHA2" class="btn btn-outline-primary me-2" target="_blank"><i class="bi bi-instagram"></i></a>
+              <a href="https://wa.me/5492954542640" class="btn btn-outline-primary" target="_blank"><i class="bi bi-whatsapp"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="map-container">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456789!2d-64.3613!3d-36.6207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95c6b8f8e8e8e8e8:0x8e8e8e8e8e8e8e8!2sUriburu%2C%20La%20Pampa%2C%20Argentina!5e0!3m2!1ses!2sar!4v1620000000000" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-4 text-center text-md-start">
+            <p class="mb-0">&copy; 2026 El Bárbaro. Todos los derechos reservados.</p>
+          </div>
+          <div class="col-md-4 text-center">
+            <a href="https://www.facebook.com/share/1MU8K5NiLM/" class="text-white me-3" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/carabajalabel?igsh=dHg2cGZlb29icHA2" class="text-white me-3" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://wa.me/5492954542640" class="text-white" target="_blank"><i class="bi bi-whatsapp"></i></a>
+          </div>
+          <div class="col-md-4 text-center text-md-end">
+            <p class="mb-0">Desarrollado por <a href="https://kevin-luna-dev.com" target="_blank" rel="noopener" class="footer-link">Kevin Luna <i class="bi bi-box-arrow-up-right"></i></a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
